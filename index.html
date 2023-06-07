@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfaction Survey Form</title>
+    <link rel="shortcut icon" href="images/survey-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <article id="survey-title">
+            <img src="images/survey-icon.png" alt="Survey Icon" width="80px">
+            <h1>Satisfaction Survey</h1>
+        </article>
+
+        <p>Please fill out this form with the required information.</p>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">Enter for your first name: <input type="text" id="first-name" required></label>
+                <label for="last-name">Enter your last name: <input type="text" id="last-name" required></label>
+                <label for="email">Enter your email: <input type="email" id="email" required></label>
+                <label for="age-group">Select your age group: 
+                    <select id="age-group">
+                        <option value="">(Select one)</option>
+                        <option value="group-1">13-17</option>
+                        <option value="group-2">18-24</option>
+                        <option value="group-3">25-34</option>
+                        <option value="group-4">35-44</option>
+                        <option value="group-5">45-54</option>
+                        <option value="group 6">55-64</option>
+                        <option value="group-7">65+</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>How satisfied were you with your overall shopping experience today?</legend>
+                <label for="very-satisfied"><input type="radio" id="very-satisfied" name="satisfaction-level">Very Satisfied</label>
+                <label for="satisfied"><input type="radio" id="satisfied" name="satisfaction-level">Satisfied</label>
+                <label for="slightly-satisfied"><input type="radio" id="slightly-satisfied" name="satisfaction-level">Slightly satisfied</label>
+                <label for="unsatisfied"><input type="radio" id="unsatisfied" name="satisfaction-level">Unsatisfied</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Please tell us a little more about your experience: <br> <textarea rows="3" cols="50" placeholder="Additional comments..."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit Form" id="submit-btn">
+        </form>
+    </main>
+    <footer>
+        Coded by <a href="https://capable-caramel-a8a301.netlify.app/">S. Pari Nathali  </a>
+    </footer>
+
+</body>
+</html>

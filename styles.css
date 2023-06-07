@@ -1,0 +1,80 @@
+:root {
+    --primary-text-color: #000000;
+    --secondary-text-color: #FFFFFF;
+    --background-color-a: rgb(77, 140, 191);
+    --background-color-b: #49cdf2;
+    --primary-font-family: 'Poppins', sans-serif;
+    --primary-font-size: 1.8rem;
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color-a);
+}
+
+main {
+    background-color: white;
+    border-radius: 3.5rem;
+    margin: 5rem auto;
+    max-width: 75rem;
+    padding: 1rem 3rem;
+    font-family: var(--primary-font-family); 
+}
+
+h1 {
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+p, fieldset, legend {
+    font-size: var(--primary-font-size);
+}
+
+
+label {
+    display: block;
+    font-size: 1.6rem;
+    margin: 0.6rem 0;
+}
+
+
+footer {
+    font-size:var(--primary-font-size);
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+footer a {
+    color: var(--secondary-text-color);
+}
+
+
+#survey-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#submit-btn {
+    border-radius: 4px;
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+}
+
+#submit-btn:hover {
+    background-color:var(--background-color-b);
+    color: var(--secondary-text-color);
+}
