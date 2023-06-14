@@ -26,9 +26,9 @@ body {
 main {
     background-color: white;
     border-radius: 3.5rem;
-    margin: 5rem auto;
+    margin: 5rem auto 0;
     max-width: 75rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     font-family: var(--primary-font-family); 
 }
 
@@ -53,6 +53,7 @@ footer {
     font-size:var(--primary-font-size);
     text-align: center;
     color: var(--secondary-text-color);
+    padding-top: 1rem;
 }
 
 footer a {
@@ -78,3 +79,18 @@ footer a {
     background-color:var(--background-color-b);
     color: var(--secondary-text-color);
 }
+
+@media (max-width: 800px) {
+
+    main{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        font-size: 1.6rem;
+
+    }
+  
+    footer {
+        font-size: 1.6rem;
+    }
+  
+  }
